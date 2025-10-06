@@ -8,7 +8,7 @@ button:hover {
 }
 
 .main {
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     background-image: url(/images/background_img_1.jpg);
     background-position: center;
@@ -344,19 +344,22 @@ header ul li .sign_in {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .container .second {
-    height: 314px;
+    height: auto;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.second h2{
+    color: white;
+}
+.second .boxs_container{
+    height: auto;
+    width: auto;
+    background-color: aliceblue;
+
+}
+.boxs_container boxes{
+    width: 50%;
+    
 }
