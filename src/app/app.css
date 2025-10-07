@@ -8,7 +8,7 @@ button:hover {
 }
 
 .main {
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background-image: url(/images/background_img_1.jpg);
     background-position: center;
@@ -35,7 +35,8 @@ header {
 }
 
 header img {
-    height: 60%;
+    height: 50%;
+    width: auto;
 }
 
 header ul {
@@ -43,10 +44,44 @@ header ul {
     align-content: center;
     justify-content: center;
     list-style: none;
-    gap: 40px;
+    gap: 20px;
     height: 50%;
 
+
 }
+
+header ul li select {
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-weight: 600;
+    color: white;
+    height: 100%;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header ul li button {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    height: 100%;
+    width: 100px;
+
+
+}
+
+
+
+
+header ul li .sign_in {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0, 0.8);
+}
+
 
 header ul li button {
     cursor: pointer;
@@ -55,18 +90,6 @@ header ul li button {
     color: white;
     height: 100%;
     width: 100px;
-
-
-}
-
-header ul li button {
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
-    height: 100%;
-    width: 100px;
-
 
 }
 
@@ -75,37 +98,6 @@ header ul li .language {
     width: 120px;
     background-color: transparent;
     border-radius: 5px;
-
-
-
-}
-
-header ul li .sign_in {
-    border: none;
-    background-color: rgb(255, 0, 0, 1);
-}
-
-
-header ul li button {
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
-    height: 100%;
-    width: 100px;
-
-}
-
-header ul li .language {
-    border: 1px solid gray;
-    width: 120px;
-    background-color: transparent;
-    border-radius: 5px;
-}
-
-header ul li .sign_in {
-    border: none;
-    background-color: rgb(255, 0, 0, 1);
 }
 
 .main .content {
@@ -115,6 +107,7 @@ header ul li .sign_in {
     justify-content: center;
     align-items: center;
     width: auto;
+    margin-bottom: 100px;
     box-sizing: border-box;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     font-weight: 800;
@@ -262,6 +255,8 @@ header ul li .sign_in {
     padding: 0px 148px;
     box-sizing: border-box;
     height: auto;
+    margin-top: -5px;
+    width: auto;
     display: flex;
     background-color: rgba(0, 0, 0, 1);
     color: rgba(255, 255, 255, 1);
@@ -275,14 +270,12 @@ header ul li .sign_in {
 
 .container .first {
     display: flex;
-    width: calc(100% - 148px);
+    margin-top: -20px;
+    width: 100%;
     flex-direction: column;
     height: auto;
     align-self: start;
     margin-bottom: 64px;
-
-
-
 }
 
 .first h2 {
@@ -312,6 +305,7 @@ header ul li .sign_in {
     align-items: center;
     cursor: pointer;
 }
+
 
 .first ul li img {
     width: 100%;
@@ -347,31 +341,25 @@ header ul li .sign_in {
 
 /* jsdilfueghrbhgviodrnyhiogtdhfogth4 */
 
-
 .before_cont {
     box-sizing: border-box;
     overflow-x: hidden;
     position: relative;
-    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
     height: 6.25rem;
     z-index: 1;
 }
 
-.before_cont .curve {
-    box-sizing: border-box;
+.curve {
     position: absolute;
+    box-sizing: border-box;
     height: 100%;
+    left: -50%;
+    width: 200%;
     top: 0;
     margin: auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    border: solid .25rem transparent;
+    border: solid 1.5rem transparent;
     border-top-left-radius: 50% 100%;
     border-top-right-radius: 50% 100%;
     border-bottom: none;
@@ -379,6 +367,21 @@ header ul li .sign_in {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
+
+.curve:before {
+    width: 200%;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -50%;
+    z-index: -1;
+    margin-top: -.25rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+
 
 /* sudfavsukfanihe8tvb98iecfbigeyuirwoxhdnwgf */
 
@@ -400,10 +403,12 @@ header ul li .sign_in {
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
+    position: relative;
 
 }
 
 .boxes_container .boxes {
+    /* position: relative; */
     width: 50%;
     height: auto;
     border: 2px solid gray;
@@ -414,6 +419,10 @@ header ul li .sign_in {
     background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
     flex-direction: column;
     border-radius: 15px;
+}
+
+.boxes svg {
+    align-self: flex-end;
 }
 
 .boxes h3 {
@@ -427,7 +436,199 @@ header ul li .sign_in {
     font-weight: 400;
     line-height: 1.5;
 }
+@media screen and (max-width: 1000px) {
+    .second .boxes_container {
+        flex-direction: column;
+        width: auto;
+        height: auto;
 
-.boxes svg {
-    align-self: flex-end;
+    }
+}
+
+.third {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.third .buttons button {
+    display: flex;
+    width: 250%;
+    box-sizing: content-box;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px 25px 20px;
+    background-color: rgba(51, 51, 51, 0.8);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    gap: 20px;
+    margin-bottom: 10px;
+
+}
+
+.container .fourth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+
+}
+
+.fourth ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    /* padding-top: 16px; */
+    width: 100%;
+    height: auto;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.fourth ul li:nth-child(1) {
+    height: 100%;
+    width: 50%;
+}
+
+.fourth ul li:nth-child(2) {
+    height: 100%;
+    width: 40%;
+}
+
+
+.fourth ul li input {
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid gray;
+    background-color: transparent;
+    caret-color: rgb(255, 255, 255);
+    width: 100%;
+    font-family: unset;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.8rem 1rem 0.8rem;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+
+}
+
+.fourth ul li input::placeholder {
+    color: rgb(255, 255, 255);
+    font-family: unset;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+
+.fourth ul li button {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.8);
+    caret-color: rgb(255, 255, 255);
+    width: 50%;
+    font-family: unset;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-weight: 700;
+    color: white;
+    padding: 0.8rem 1rem 0.8rem;
+    cursor: pointer;
+    line-height: 1.5;
+
+}
+
+.fourth h3 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: unset;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px 60px;
+}
+
+.footer-contact {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.footer-contact a {
+    color: #666;
+    text-decoration: underline;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    width: 22%;
+    min-width: 120px;
+    margin-bottom: 20px;
+}
+
+.footer-column a {
+    display: block;
+    color: #666;
+    font-size: 14px;
+    line-height: 2;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.language-selector {
+    margin-bottom: 20px;
+}
+
+select {
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-weight: 600;
+    color: white;
+    height: 40px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-bottom-text {
+    font-size: 15px;
+    color: #333;
+    margin-top: 20px;
+    line-height: 3.5;
+}
+
+.footer-bottom-text a {
+    color: blue;
+    font-size: 17px;
+    text-decoration: underline;
 }
